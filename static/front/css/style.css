@@ -35,3 +35,36 @@ body{
   cursor: pointer;
 }
 
+.card_bottom {
+  position: relative;
+}
+
+.card_bottom span {
+  position: absolute;
+  bottom: 0;
+  right: auto;
+  left:auto;
+  font-size: x-small;
+  font-weight: 300;
+ 
+}
+
+.non_decorative_link a {
+  text-decoration: none;
+  color:black;
+}
+
+.food .card, .food .list-group-item{
+  background-color: rgb(34, 204, 34);
+}
+.food h1 {
+  color: rgb(34, 204, 34);
+}
+
+
+.clothes .card, .clothes .list-group-item{
+  background-color: aquamarine;
+}
+.clothes h1 {
+  color: aquamarine;
+}

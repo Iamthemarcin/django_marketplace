@@ -1,168 +1,271 @@
+{% extends 'master.html' %}
 {% load static %}
-<!doctype html>
-<html lang="pl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href= '{%static "front/css/style.css" %}' rel="stylesheet">
-  </head>
-  
-
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id = "navbar">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Strona Główna </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Lista stoisk <span class="sr-only">(tu jesteś)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nasi sprzedawcy</a>
-          </li>
-        </ul>
-      </div>
-        <span>
-          <a class="nav-link" href="#">
-            <button type="button" class="btn btn-outline-primary" >Zaloguj się</button> 
-          </a>
-        </span>
-      </div>
-    </nav>
+{% block mainblock %}
     <br>
 
-    <div class = "container">
+    <div class = "container food">
+
+        <h1 style="text-align:center ;"> Żywność </h1>
+        
         <div class = "row justify-content-center">
+           
+
             
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Stoisko 1</h5>
-                  <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Sprzedawca: Leszek Mieszek</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
                 </div>
             </div>
+
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+                </div>
+            </div>
+            
          </div>
     <br>
         <div class = "row justify-content-center">
                 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+                </div>
+            </div>
+
+            <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+                <a href = "#">
+                    <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Stoisko 1</h5>
+                    <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                    </div>
+                    <br>
+                    <hx><strong>Nasze produkty</strong></hx>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Banany</li>
+                    <li class="list-group-item">Jabłka</li>
+                    <li class="list-group-item">Ogórki</li>
+                    </ul>
+                </a>    
+                <div class="card-body card_bottom">                 
+                    <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+                </div>
+            </div>
+
+        </div>    
+    </div>
+<br>
+<div class = "container clothes">
+    <div class = "row justify-content-center ">
+        <h1 style="text-align:center;"> Ciuchy </h1>
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
                 <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
                 </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
                 <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
                 </ul>
-                <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
             </div>
         </div>
-    
-    </div>
-    
-    <!-- footer -->
-    
-    <footer class="bg-light text-center text-lg-start" width = 100%>
 
-      <div class="text-center p-3" background-color: rgba(0, 0, 0, 0.2);>
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-      
-    </footer>
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
+                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
+                </ul>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+            </div>
+        </div>
 
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <script src={%static "front/js/canvas.js" %} ></script>
-  
-  </html>
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
+                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
+                </ul>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+            </div>
+        </div>
+        
+     </div>
+<br>
+    <div class = "row justify-content-center">
+            
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
+                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
+                </ul>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+            </div>
+        </div>
+
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
+                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
+                </ul>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+            </div>
+        </div>
+
+        <div class="card non_decorative_link" style="width: 18rem; margin-right: 2rem;">
+            <a href = "#">
+                <img class="card-img-top" src="{%static 'front/images/stoisko.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Stoisko 1</h5>
+                <p class="card-text">Super opis stoiska! Niemiec płakał jak sprzedawał</p>
+                </div>
+                <br>
+                <hx><strong>Nasze produkty</strong></hx>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Banany</li>
+                <li class="list-group-item">Jabłka</li>
+                <li class="list-group-item">Ogórki</li>
+                </ul>
+            </a>    
+            <div class="card-body card_bottom">                 
+                <span>Ostatnio zaktualizowano: 22.01.2020r.</span>
+            </div>
+        </div>
+
+    </div>    
+</div>
+
+{% endblock %}
