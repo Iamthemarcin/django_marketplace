@@ -21,5 +21,6 @@ from django.contrib import admin
 urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^home', include('main.urls')),
-    re_path(r'^stoiska/', include('stoiska.urls'))
+    re_path(r'^lista_stoisk/', include('lista_stoisk.urls')),
+    re_path(r'^stoisko/', include('stoisko.urls'))
 ]

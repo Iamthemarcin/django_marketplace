@@ -68,3 +68,69 @@ body{
 .clothes h1 {
   color: aquamarine;
 }
+
+
+.stoisko-container img {
+
+  margin: auto;    
+  display: block;
+}
+
+.rating-title{
+  text-align: center;
+  font-weight: 200;
+  font-size: small;
+}
+
+.border-dark{
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 1rem;
+}
+
+.my-title{
+  font-size:large;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.my-description{
+  font-size: medium !important; 
+  font-weight: 400 !important;
+  
+}
+
+
+/* KOMENTARZE  */
+
+.bdge {
+  height: 21px;
+  background-color: orange;
+  color: #fff;
+  font-size: 11px;
+  padding: 8px;
+  border-radius: 4px;
+  line-height: 3px;
+}
+
+.comments {
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-top: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hit-voting:hover {
+  color: blue;
+}
+
+.hit-voting {
+  cursor: pointer;
+}
