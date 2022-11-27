@@ -1,0 +1,123 @@
+[
+{
+    "model": "stoisko.stoisko",
+    "pk": 1,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/zdj_stoiska.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 2,
+    "fields": {
+        "rodzaj_stoiska": 1,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/stoisko7.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 3,
+    "fields": {
+        "rodzaj_stoiska": 1,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/stoisko.jpg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 4,
+    "fields": {
+        "rodzaj_stoiska": 3,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z ciuchami wow",
+        "zdjecie": "stoiska_zdjecia/stoisko_ciuch.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 5,
+    "fields": {
+        "rodzaj_stoiska": 1,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/losowe_zdj.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 6,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/stoisko7.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 7,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/8465d26385_madryt-mercado-de-san-miguel-4_640x480xs.jpg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 8,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/stoisko.jpg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 9,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/losowe_zdj.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 10,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/stoisko7.jpeg"
+    }
+},
+{
+    "model": "stoisko.stoisko",
+    "pk": 11,
+    "fields": {
+        "rodzaj_stoiska": 2,
+        "czy_aktywne": true,
+        "opis_stanowiska": "niesamowite stoisko",
+        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "zdjecie": "stoiska_zdjecia/zdj_stoiska.jpeg"
+    }
+}
+]
