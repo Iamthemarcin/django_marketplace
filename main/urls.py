@@ -5,8 +5,9 @@ from . import views
 
 urlpatterns = [
 
-    re_path(r'', views.home, name = 'home'),
-    re_path(r'rejestracja/', views.rejestracja, name = 'rejestracja')
+    path('', views.home, name = 'home'),
+
     #logowanie i rejestracja 
-    
+    path('rejestracja/', views.rejestracja, name = 'rejestracja'),
+    path('logowanie/', views.logowanie, name = 'logowanie')
 ]

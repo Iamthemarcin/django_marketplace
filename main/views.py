@@ -11,3 +11,7 @@ def home(request):
 def rejestracja(request):
 
     return(render(request, 'rejestracja.html'))
+
+def logowanie(request):
+
+    return(render(request, 'logowanie.html'))
