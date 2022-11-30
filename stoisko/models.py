@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
+from main.models import Sprzedawca
 # Create your models here.
 
 class Stoisko(models.Model):
@@ -24,6 +25,7 @@ class Stoisko(models.Model):
     opis_stanowiska = models.CharField(max_length=256)
     krotki_opis = models.CharField(max_length = 40, default="Krótki opis stanowiska")
     zdjecie = models.ImageField(upload_to= 'stoiska_zdjecia')
+    sprzedawca = models.ForeignKey(Sprzedawca, blank=True, null=True, on_delete= models.SET_NULL)
     
     def __str__(self):
         return  "Stoisko {numer}".format(numer = self.id)       

@@ -1,0 +1,1 @@
+python3 manage.py loaddata fixtures/User.json fixtures/Stoisko.json fixtures/Produkt.json

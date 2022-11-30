@@ -6,10 +6,21 @@
     <link href= '{%static "front/css/rejestracja.css" %}' rel="stylesheet">
 </head>
 
-<div class="d-flex justify-content-center align-items-center mt-5">
+<div class="d-flex h-100 justify-content-center align-items-center mt-5">
 
 
     <div class="card">
+
+    {% if errors %}
+
+      {% for error in errors %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ error }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </button>
+        </div>
+      {% endfor %} 
+    {% endif %}
 
         <h5 class="card-title" style = "text-align:center;">Kim jesteś?</h5>
 
@@ -26,44 +37,63 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="użytkownik-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
+              <form action = "{% url 'rejestracja' %}" method = "POST">
+                {% csrf_token %}
+                <div class="form px-4 pt-5">                
+                  
+  
+                  <!-- <input type="text" name="username" class="form-control" placeholder="Nazwa użytkownika"> -->
+                  {{user_form.username}}
+  
+                  <!-- <input type="text" name="e-mail" class="form-control" placeholder="Adres e-mail"> -->
 
-                <div class="form px-4 pt-5">
-  
-                  <input type="text" name="" class="form-control" placeholder="Nazwa użytkownika">
-  
-                  <input type="text" name="" class="form-control" placeholder="Adres e-mail">
+                  {{user_form.email}}
                   
-                  <input type="text" name="" class="form-control" placeholder="Hasło">
+                  <!-- <input type="password" name="password1" class="form-control" placeholder="Hasło"> -->
+
+                  {{user_form.password1}}
   
-                  <input type="text" name="" class="form-control" placeholder="Powtórz hasło">
+                  <!-- <input type="password" name="password2" class="form-control" placeholder="Powtórz hasło">  -->
                   
-                  <button class="btn btn-dark btn-block">Zarejestruj się</button>
+                  {{user_form.password2}}
+                  <button class="btn btn-dark btn-block" type = "submit">Zarejestruj się</button>
   
                 </div>
-  
+              </form>
             </div>
 
 
             <div class="tab-pane fade" id="sprzedawca-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 
-              <div class="form px-4 pt-5">
-  
-                <input type="text" name="" class="form-control" placeholder="Imię">
+            <form action = "{% url 'rejestracja' %}" method = "POST">
+              {% csrf_token %}
+                <div class="form px-4 pt-5">
 
-                <input type="text" name="" class="form-control" placeholder="Nazwisko">
-                
-                <input type="text" name="" class="form-control" placeholder="Nazwa użytkownika">
-  
-                <input type="text" name="" class="form-control" placeholder="Adres e-mail">
-              
-                <input type="text" name="" class="form-control" placeholder="Hasło">
 
-                <input type="text" name="" class="form-control" placeholder="Powtórz hasło">
+                  <!-- <input type="text" name="" class="form-control" placeholder="Imię"> -->
+                  {{seller_info_form.imie}}
 
-                <button class="btn btn-dark btn-block">Zarejestruj się</button>
-                
+                  <!-- <input type="text" name="" class="form-control" placeholder="Nazwisko"> -->
+                  {{seller_info_form.nazwisko}}
+                  
+                  <!-- <input type="text" name="" class="form-control" placeholder="Nazwa użytkownika"> -->
+                  {{seller_form.username}}
 
-              </div>
+                  <!-- <input type="text" name="" class="form-control" placeholder="Adres e-mail"> -->
+                  {{seller_form.email}}
+
+                  <!-- <input type="text" name="" class="form-control" placeholder="Hasło"> -->
+                  {{seller_form.password1}}
+    
+                  <!-- <input type="text" name="" class="form-control" placeholder="Powtórz hasło"> -->
+                  {{seller_form.password2}}
+
+                  <button class="btn btn-dark btn-block" type = "submit" >Zarejestruj się</button>
+                  
+
+                </div>
+              </form>
+
             </div>
 
           </div>

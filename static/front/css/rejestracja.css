@@ -6,7 +6,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    height : 1px; 
+      /* body musi miec zdefiniowana wysokosc zeby scentrowac diva ale jak dawalem height 100% nie dzialalo, dalem min height 100vh i height 1px i dziala */
     }
 
     footer{

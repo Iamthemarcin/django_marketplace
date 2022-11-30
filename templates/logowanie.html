@@ -6,29 +6,37 @@
     <link href= '{%static "front/css/rejestracja.css" %}' rel="stylesheet">
 </head>
 
-<div class="d-flex justify-content-center align-items-center mt-5">
+<div class="d-flex h-100 justify-content-center align-items-center mt-5">
 
 
     <div class="card">
 
-          
+      {% if messages %}
+
+        {% for message in messages %}
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </button>
+          </div>
+        {% endfor %} 
+      {% endif %}
+
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="użytkownik-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
+              <form action = "/logowanie/" method = "POST">
+                <div class="form px-4 pt-5"  >
+                  {% csrf_token %}
+                  <input type="text" name="username" class="form-control" placeholder="Nazwa użytkownika">
+                  
+                  <input type="password" name="password" class="form-control" placeholder="Hasło">
 
-                <div class="form px-4 pt-5">
-  
-                  <input type="text" name="" class="form-control" placeholder="Nazwa użytkownika">
-  
-                  <input type="text" name="" class="form-control" placeholder="Adres e-mail">
                   
-                  <input type="text" name="" class="form-control" placeholder="Hasło">
-  
-                  
-                  <button class="btn btn-dark btn-block">Zaloguj się</button>
-  
-                </div>
-  
+                  <button class="btn btn-dark btn-block" type = "submit">Zaloguj się</button>
+         
+                </div>         
+              </form>
             </div>
 
           </div>
