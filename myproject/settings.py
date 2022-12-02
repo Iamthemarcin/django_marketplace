@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'lista_stoisk',
-    'stoisko'
+    'stoisko',
+    'komentarze'
 ]
 
 MIDDLEWARE = [

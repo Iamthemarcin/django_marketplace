@@ -22,6 +22,8 @@ class User(AbstractUser):
             return super().save(*args, **kwargs)
 
 
+
+
 class UzytkownikManager(BaseUserManager):
     def get_queryset(self, *args, **kwargs):
         results = super().get_queryset(*args, **kwargs)
@@ -40,6 +42,8 @@ class SprzedawcaManager(BaseUserManager):
     def get_queryset(self, *args, **kwargs):
         results = super().get_queryset(*args, **kwargs)
         return results.filter(role=User.Role.SPRZEDAWCA)
+    
+    
 
 
 class Sprzedawca(User):
@@ -51,8 +55,7 @@ class Sprzedawca(User):
     class Meta:
         proxy = True
 
-    def welcome(self):
-        return "Only for sprzedawcy"
+
 
 # Create your models here.
 
@@ -61,9 +64,8 @@ class SprzedawcaProfile(models.Model):
     imie = models.CharField(max_length=32)
     nazwisko = models.CharField(max_length=32)
 
-
-
-
+    def __str__(self):
+        return self.imie
 
 
 

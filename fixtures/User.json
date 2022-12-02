@@ -1,7 +1,23 @@
-[
-{
+[{
   "model": "main.user",
   "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$4TdkIY5j3S6vaNiXQUUYyH$MeMpMhPdL7W5KbojNBOMqw9FcR2MTdveUDERjCXp3uE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Konto usunięte",
+    "email": "",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2022-11-29T18:43:50.370Z",
+    "role": "UZYTKOWNIK",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "main.user",
+  "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$390000$4TdkIY5j3S6vaNiXQUUYyH$MeMpMhPdL7W5KbojNBOMqw9FcR2MTdveUDERjCXp3uE=",
     "last_login": null,
@@ -18,7 +34,7 @@
 },
 {
   "model": "main.user",
-  "pk": 2,
+  "pk": 3,
   "fields": {
     "password": "2121321weqdasxceqq21",
     "last_login": null,
@@ -41,7 +57,7 @@
     "last_login": null,
     "is_superuser": false,
     "username": "test_seller1",
-    "email": "",
+    "email": "test_seller1@gmail.com",
     "is_staff": false,
     "is_active": true,
     "date_joined": "2022-11-29T18:47:44.720Z",
@@ -61,7 +77,7 @@
     "email": "test_seller2@gmail.com",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2022-11-29T20:25:39.414Z",
+    "date_joined": "2022-11-29T20:22:39.414Z",
     "role": "SPRZEDAWCA",
     "groups": [],
     "user_permissions": []
@@ -78,8 +94,42 @@
     "email": "test_user2@gmail.com",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2022-11-29T18:44:16Z",
+    "date_joined": "2022-11-29T11:33:16Z",
     "role": "UZYTKOWNIK",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "main.user",
+  "pk": 7,
+  "fields": {
+    "password": "2121321weqdasxceqq21",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "glowny-test-sprzedawca",
+    "email": "dudududududux@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-11-29T19:44:16Z",
+    "role": "SPRZEDAWCA",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "main.user",
+  "pk": 8,
+  "fields": {
+    "password": "2121321weqdasxceqq21",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ostateczny-test-sprzedawca",
+    "email": "dudududududux@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-11-29T19:44:16Z",
+    "role": "SPRZEDAWCA",
     "groups": [],
     "user_permissions": []
   }

@@ -82,7 +82,7 @@
     "pk": 9,
     "fields": {
         "nazwa_stoiska": 8,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Ziemniaki"
         
         
     }
@@ -92,7 +92,7 @@
     "pk": 10,
     "fields": {
         "nazwa_stoiska": 7,
-        "nazwa_produktu": "dobry t-shirt"
+        "nazwa_produktu": "Spodnie"
         
     }
 },
@@ -101,7 +101,7 @@
     "pk": 11,
     "fields": {
         "nazwa_stoiska": 7,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Ogórki"
         
         
     }
@@ -111,7 +111,7 @@
     "pk": 12,
     "fields": {
         "nazwa_stoiska": 7,
-        "nazwa_produktu": "dobry t-shirt"
+        "nazwa_produktu": "Bakłażany"
 
         
     }
@@ -121,7 +121,7 @@
     "pk": 13,
     "fields": {
         "nazwa_stoiska": 6,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Kapusta"
     
         
     }
@@ -131,7 +131,7 @@
     "pk": 14,
     "fields": {
         "nazwa_stoiska": 6,
-        "nazwa_produktu": "dobry t-shirt"
+        "nazwa_produktu": "Rzodkwie"
 
         
     }
@@ -141,7 +141,7 @@
     "pk": 15,
     "fields": {
         "nazwa_stoiska": 6,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Selery"
         
     }
 },
@@ -150,7 +150,7 @@
     "pk": 16,
     "fields": {
         "nazwa_stoiska": 5,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Szparagi"
         
     }
 },
@@ -159,7 +159,7 @@
     "pk": 17,
     "fields": {
         "nazwa_stoiska": 5,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Kukurydza"
         
         
     }
@@ -169,7 +169,7 @@
     "pk": 18,
     "fields": {
         "nazwa_stoiska": 5,
-        "nazwa_produktu": "Super Produkt"
+        "nazwa_produktu": "Marchewki"
         
         
     }

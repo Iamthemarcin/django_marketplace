@@ -142,3 +142,9 @@ footer{
 }
 
 /* KOMENTARZE  */
+
+@media (min-width: 1000px) {
+  .less-wide{
+      max-width: 920px;
+  }
+}

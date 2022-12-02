@@ -5,34 +5,40 @@
     "fields": {
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
-        "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "opis_stanowiska": "ventore veritatis et quasi architev xplicab oventore veritatis et quasi architev xp icabovent ore verita tis et quasi architev xplicabo",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.",
         "zdjecie": "stoiska_zdjecia/zdj_stoiska.jpeg",
-        "sprzedawca": 4
+        "sprzedawca": 4,
+        "wspolrzedne_x":  50.68640988021609,
+        "wspolrzedne_y": 16.614065257475882
     }
 },
 {
     "model": "stoisko.stoisko",
     "pk": 2,
     "fields": {
-        "rodzaj_stoiska": 1,
+        "rodzaj_stoiska": 3,
         "czy_aktywne": true,
-        "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "opis_stanowiska": "ventore veritatis et quasi architev xplicab oventore veritatis et quasi architev xp icabovent ore verita tis et quasi architev xplicabo",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko7.jpeg",
-        "sprzedawca": 5
+        "sprzedawca": 5,
+        "wspolrzedne_x":  50.686380141544525,
+        "wspolrzedne_y": 16.61401027219344
     }
 },
 {
     "model": "stoisko.stoisko",
     "pk": 3,
     "fields": {
-        "rodzaj_stoiska": 1,
+        "rodzaj_stoiska": 3,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko.jpg",
-        "sprzedawca": null
+        "sprzedawca": null,
+        "wspolrzedne_x":  50.686350827692685,
+        "wspolrzedne_y": 16.613941875866495
     }
 },
 {
@@ -42,9 +48,11 @@
         "rodzaj_stoiska": 3,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z ciuchami wow",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko_ciuch.jpeg",
-        "sprzedawca": null
+        "sprzedawca": null,
+        "wspolrzedne_x":  50.68631259220623,
+        "wspolrzedne_y": 16.61383056419715
     }
 },
 {
@@ -54,9 +62,11 @@
         "rodzaj_stoiska": 1,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/losowe_zdj.jpeg",
-        "sprzedawca": null
+        "sprzedawca": null,
+        "wspolrzedne_x":  50.68627987959865,
+        "wspolrzedne_y": 16.61376216787021
     }
 },
 {
@@ -66,9 +76,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "Mamy świeże, swojskie warzywa i owoce ",
         "zdjecie": "stoiska_zdjecia/stoisko7.jpeg",
-        "sprzedawca": null
+        "sprzedawca": 8,
+        "wspolrzedne_x":  50.68704968068401,
+        "wspolrzedne_y": 16.61267943193337
     }
 },
 {
@@ -78,9 +90,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/8465d26385_madryt-mercado-de-san-miguel-4_640x480xs.jpg",
-        "sprzedawca": 4
+        "sprzedawca": 4,
+        "wspolrzedne_x":  50.68699851880614,
+        "wspolrzedne_y": 16.612575211597445
     }
 },
 {
@@ -90,9 +104,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko.jpg",
-        "sprzedawca": 5
+        "sprzedawca": 5,
+        "wspolrzedne_x":  50.68695566522446,
+        "wspolrzedne_y": 16.61251930532453
     }
 },
 {
@@ -102,9 +118,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/losowe_zdj.jpeg",
-        "sprzedawca": 5
+        "sprzedawca": 5,
+        "wspolrzedne_x":  50.68640988021609,
+        "wspolrzedne_y": 16.614065257475882
     }
 },
 {
@@ -114,9 +132,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko7.jpeg",
-        "sprzedawca": 4
+        "sprzedawca": 4,
+        "wspolrzedne_x":  50.68697315648702,
+        "wspolrzedne_y": 16.612863025372814
     }
 },
 {
@@ -126,9 +146,11 @@
         "rodzaj_stoiska": 2,
         "czy_aktywne": true,
         "opis_stanowiska": "niesamowite stoisko",
-        "krotki_opis": "niesamowite stoisko z jedzeniem mniam",
+        "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/zdj_stoiska.jpeg",
-        "sprzedawca": 4
+        "sprzedawca": 4,
+        "wspolrzedne_x":  50.68687039522615,
+        "wspolrzedne_y": 16.612662867111766
     }
 }
 ]

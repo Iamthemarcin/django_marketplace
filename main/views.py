@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import NewNormalUserForm, NewSellerForm, NewSellerInfoForm
@@ -10,10 +10,6 @@ def home(request):
     return(render(request, 'home.html'))
 
 # Create your views here.
-
-
-
-
 
 
 def rejestracja(request):
@@ -33,6 +29,7 @@ def rejestracja(request):
             sprzedawca_info.imie = seller_info_form.cleaned_data['imie']
             sprzedawca_info.nazwisko = seller_info_form.cleaned_data['nazwisko']
             sprzedawca_info.save()
+
 
             user = authenticate(username = username, password = password)    
                
@@ -71,7 +68,6 @@ def rejestracja(request):
 
         return(render(request, 'rejestracja.html', context))
     # user = User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
-
 
 def logowanie(request):
     if request.method == "POST":

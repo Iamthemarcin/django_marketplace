@@ -6,10 +6,11 @@
     <link href= '{%static "front/css/rejestracja.css" %}' rel="stylesheet">
 </head>
 
+
 <div class="d-flex h-100 justify-content-center align-items-center mt-5">
-
-
+  
     <div class="card">
+      <h5 class="card-title" style = "text-align:center;">Logowanie</h5>
 
       {% if messages %}
 
@@ -26,22 +27,20 @@
             <div class="tab-pane fade show active" id="użytkownik-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
               <form action = "/logowanie/" method = "POST">
-                <div class="form px-4 pt-5"  >
+                <div class="form px-4 pt-1"  >
                   {% csrf_token %}
                   <input type="text" name="username" class="form-control" placeholder="Nazwa użytkownika">
                   
                   <input type="password" name="password" class="form-control" placeholder="Hasło">
-
-                  
-                  <button class="btn btn-dark btn-block" type = "submit">Zaloguj się</button>
-         
+                  <div class = "row">
+                    <div class="col-sm-6"><p class="float-start"><button class=" btn btn-dark btn-block" type = "submit">Zaloguj się</button></p></div>  
+                    <div class="col-sm-6 position-relative"><a href = # class = 'position-absolute bottom-0 end-0'>Zapomniałem hasła</a></div>  
+                  </div>
                 </div>         
               </form>
             </div>
 
           </div>
-
-
     </div>
     
 

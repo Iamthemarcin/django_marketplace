@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href= '{%static "front/css/style.css" %}' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
     
@@ -27,13 +28,20 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'lista_stoisk' %}">Lista stoisk</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nasi sprzedawcy</a>
-          </li>
-        </ul>
-      </div>
+          </li>           
+          {% if user.role == "SPRZEDAWCA" %}
 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Moje stoiska</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div> 
+      
+
+      
+      
+      
       {% if user.is_authenticated %}
       
       <span style = 'margin-right: 10px;'>{{user.username}}</span>  
