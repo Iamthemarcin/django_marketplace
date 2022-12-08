@@ -1,3 +1,6 @@
+
+/* HOME */
+
 body{
   background-image: url("/static/front/images/bg.jpg");
   min-height: 100vh;
@@ -41,6 +44,8 @@ footer{
   cursor: pointer;
 }
 
+/* LISTA STOISK */
+
 .card_bottom {
   position: relative;
 }
@@ -75,6 +80,7 @@ footer{
   color: black;
 }
 
+/* INDYWIDUALNA KARTA STOISK */
 
 .stoisko-container img {
 
@@ -108,30 +114,12 @@ footer{
 
 /* KOMENTARZE  */
 
-.bdge {
-  height: 21px;
-  background-color: orange;
-  color: #fff;
-  font-size: 11px;
-  padding: 8px;
-  border-radius: 4px;
-  line-height: 3px;
-}
-
 .comments {
   text-decoration: underline;
   text-underline-position: under;
   cursor: pointer;
 }
 
-.dot {
-  height: 7px;
-  width: 7px;
-  margin-top: 3px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 .hit-voting:hover {
   color: blue;
@@ -141,10 +129,35 @@ footer{
   cursor: pointer;
 }
 
-/* KOMENTARZE  */
+/* KOMENTARZE SZEROKOSC  */
 
 @media (min-width: 1000px) {
   .less-wide{
       max-width: 920px;
   }
+}
+/* OCENY GWIAZDECZKI <3 styl prosto z githuba z niewielkimi zmianami*/
+
+.rating-list li {
+  display: inline;
+  color: #ddd;
+  padding: 0 10px;
+}
+
+.rating-list li:hover ~ li,
+.rating-list li:hover  {
+  color: orange;
+}
+
+.rating-list {
+  direction: rtl;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+
+.checked {
+    color: orange;
 }

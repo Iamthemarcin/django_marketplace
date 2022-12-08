@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
+from django.db.models import Avg
 from django.db import models
-from main.models import Sprzedawca
+from main.models import Sprzedawca, User
 # Create your models here.
 
 class Stoisko(models.Model):
@@ -30,7 +31,8 @@ class Stoisko(models.Model):
     wspolrzedne_y = models.FloatField(null=False)
 
 
-
+    def srednia_ocena(self) -> float:
+        return Ocena.objects.filter(stoisko=self).aggregate(Avg("ocena"))["ocena__avg"] or 0
     def __str__(self):
         return  "Stoisko {numer}".format(numer = self.id)       
     
@@ -40,19 +42,15 @@ class Produkt(models.Model):
     id = models.AutoField(primary_key=True)
     nazwa_stoiska = models.ForeignKey(Stoisko, on_delete=models.CASCADE)
     nazwa_produktu = models.CharField(max_length=40)
-
     
     def __str__(self):
         return self.nazwa_produktu
 
-# query = Stoisko.objects.filter(id = 1)
 
-# if query.exists == False: 
-#     moje_stoisko = Stoisko(id = 1, rodzaj_stoiska = "żywność", czy_aktywne = True, krotki_opis = 'ale opis', opis_stanowiska = "Świeże produkty prosto z pola w Pieszycach. Dobre, bo swojskie :)", ocena = 5)
-#     moje_stoisko.save()
+class Ocena(models.Model):
+    kreator = models.ForeignKey(User, on_delete=models.CASCADE)
+    stoisko = models.ForeignKey(Stoisko, on_delete=models.CASCADE)
+    ocena = models.IntegerField(default=0)
 
-# query = Produkt.objects.filter(id = 1)
-
-# if query.exists == False: 
-#     moj_produkt = Produkt(nazwa_stoiska = moje_stoisko, nazwa_produktu = 'banan', rodzaj_produktu = 'żywność', ilosc = 2)
-#     moj_produkt.save()
+    def __str__(self):
+        return f"{self.stoisko}: {self.ocena}"

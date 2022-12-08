@@ -3,20 +3,41 @@
 {% block mainblock %}
 
 <!-- KARTA TARGOWISKA  -->
-<div class = "container less-wide re-order">
-    <br><br>
+<div class = "container less-wide re-order mt-5">
+
     
-    <div class = "row border-dark rounded " style = "background-color: white;">
-        <h1 style = "text-align: center;"> Stoisko {{moje_stoisko.id}} </h1>
+    <div class = "row border-dark rounded  " style = "background-color: white;">
+        <h1 class = "mt-3 mb-3" style = "text-align: center;"> Stoisko {{moje_stoisko.id}} </h1>
 
         <div class = "col-md-5 col-12 justify-content-center stoisko-container first">
             <img src="{% get_media_prefix %}{{moje_stoisko.zdjecie}}" width = 100%>
-            <figure>
-                <img src="{%static 'front/images/5_star.png' %}" width = 50%>
-                <figcaption class = "rating-title" >Twoja ocena </figcaption>
-            </figure>
-        </div>
+            
+            
+            <div class = "d-flex justify-content-center "> 
+            <!-- OCENY --> 
 
+                <ul class="btn btn-light list-inline rating-list w-100">
+                    <li onclick="rate(5, {{moje_stoisko.id}})">
+                        <i class="fa fa-star {% if moje_stoisko.ocena > 4 %} checked {% endif %}" title="Rate 5"></i></li>
+                    <li onclick="rate(4, {{moje_stoisko.id}})">
+                        <i class="fa fa-star {% if moje_stoisko.ocena > 3 %} checked {% endif %}" title="Rate 4"></i></li>
+                    <li onclick="rate(3, {{moje_stoisko.id}})">
+                        <i class="fa fa-star {% if moje_stoisko.ocena > 2 %} checked {% endif %}" title="Rate 3"></i></li>
+                    <li onclick="rate(2, {{moje_stoisko.id}})">
+                        <i class="fa fa-star {% if moje_stoisko.ocena > 1 %} checked {% endif %}" title="Rate 2"></i></li>
+                    <li onclick="rate(1, {{moje_stoisko.id}})">
+                        <i class="fa fa-star {% if moje_stoisko.ocena > 0 %} checked {% endif %}" title="Rate 1"></i></li>
+
+
+                </ul>
+
+            </div>
+            {% if user.is_authenticated %}
+            <div class = "w-100 d-flex justify-content-center" justi><small class = "text-muted">Twoja ocena</small></div>
+            {% else %}
+            <div class = "w-100 d-flex justify-content-center" justi><small class = "text-muted">Zaloguj się aby ocenić</small></div>
+            {% endif %}
+        </div>
         <div class = "col-md-7 col-12  second"   >
 
             <div class = 'my-title'> 
@@ -36,7 +57,10 @@
                 Kontakt: <span class = 'my-description'>{{sprzedawca.email}}</span>
             </div>
 
-            <a href = "https://maps.google.com/?q={{moje_stoisko.wspolrzedne_x}},{{moje_stoisko.wspolrzedne_y}}&ll={{moje_stoisko.wspolrzedne_x}},{{moje_stoisko.wspolrzedne_y}}&z=20" type="button" class="btn btn-primary" style = "margin-top: 1rem;">Lokalizacja</a>
+            <a href = "https://maps.google.com/?q={{moje_stoisko.wspolrzedne_x}},{{moje_stoisko.wspolrzedne_y}}&ll={{moje_stoisko.wspolrzedne_x}},{{moje_stoisko.wspolrzedne_y}}&z=20" 
+            type="button" class="btn btn-primary" style = "margin-top: 1rem;">Lokalizacja</a>
+            
+            <span> <a href = "{% url   'edytowanie' moje_stoisko.id  %}" type="button" class="btn btn-primary" style = "margin-top: 1rem;">Edycja</a> </span>
                             
 
         </div>
@@ -62,8 +86,10 @@
                                 <h6 class="ml-1"> <strong>{{komentarz.kreator}}</strong></h6><span class="pl-3"> </span></div>
                             <div class="comment-text-sm"><span> {{komentarz.tekst}}</span></div>
                             <div class="reply-section">
-                                <div class="d-flex flex-row align-items-center voting-icons small pl-2">
-                                    {{ komentarz.pretty_date_PL}}<i class="bi bi-hand-thumbs-up m-2"></i><span>10</span>
+                                <!-- ikony, polubienia, czas dodania komentarza -->
+                                <div class="d-flex flex-row align-items-center voting-icons small pl-2"> {% csrf_token %}
+                                    {{ komentarz.pretty_date_PL}}<i id = "{{komentarz.id}}" type = "button" onclick = "get_likes(this.id)" class="polubienie bi bi-hand-thumbs-up m-2 hit-voting" "></i>
+                                    <span id = "polubienie {{komentarz.id}}">{{komentarz.ilosc_polubien}}</span>
                                 </div>
                             </div>
                         </div>

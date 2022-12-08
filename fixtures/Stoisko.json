@@ -36,7 +36,7 @@
         "opis_stanowiska": "niesamowite stoisko",
         "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko.jpg",
-        "sprzedawca": null,
+        "sprzedawca": 2,
         "wspolrzedne_x":  50.686350827692685,
         "wspolrzedne_y": 16.613941875866495
     }
@@ -50,7 +50,7 @@
         "opis_stanowiska": "niesamowite stoisko",
         "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/stoisko_ciuch.jpeg",
-        "sprzedawca": null,
+        "sprzedawca": 3,
         "wspolrzedne_x":  50.68631259220623,
         "wspolrzedne_y": 16.61383056419715
     }
@@ -59,12 +59,12 @@
     "model": "stoisko.stoisko",
     "pk": 5,
     "fields": {
-        "rodzaj_stoiska": 1,
+        "rodzaj_stoiska": 2,
         "czy_aktywne": true,
-        "opis_stanowiska": "niesamowite stoisko",
+        "opis_stanowiska": "ventore veritatis et quasi architev xplicabo.m  tatis et quasi architev tatis et quasi architev",
         "krotki_opis": "ventore veritatis et quasi architev xplicabo.m",
         "zdjecie": "stoiska_zdjecia/losowe_zdj.jpeg",
-        "sprzedawca": null,
+        "sprzedawca": 4,
         "wspolrzedne_x":  50.68627987959865,
         "wspolrzedne_y": 16.61376216787021
     }

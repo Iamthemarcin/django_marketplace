@@ -7,13 +7,15 @@
             <img src = "{%static 'front/images/napis_targi.png' %}" width = 100%>
 
             <div class = "row">
-              <form>
+              <form method = POST action = "{% url 'wyszukaj' %}"> {% csrf_token %}
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Wyszukiwarka</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Wyszukaj interesujący cię produkt</div>
+                  <label for="search-box" class="form-label">Wyszukiwarka</label>
+                  <input type="text" class="form-control" id="search-box" name = "zapytanie">
+                  <div id="search-box" class="form-text">Wyszukaj interesujący cię produkt</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Szukaj</button>
+
+                <button type = "submit" class="btn btn-primary">Szukaj</button>
+
               </form>
             
 

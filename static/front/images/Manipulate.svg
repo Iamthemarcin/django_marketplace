@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.0" width="2457.000000pt" height="3484.000000pt" viewBox="0 0 2457.000000 3484.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.0" width="2457.000000pt" height="3484.000000pt" viewBox="0 0 2457.000000 3484.000000" 
+preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <script xlink:href="../js/canvas.js"/>
   <style>
     @import url(../css/style.css);
     </style>
+    {% load static %}
+
   <g transform="translate(0.000000,3484.000000) scale(0.100000,-0.100000)" stroke="black" stroke-width="10" fill-opacity="0">
     <path style="stroke: rgb(0, 0, 0);  stroke-width: 40px;" d="M 17381.387 30748.797 L 18034.638 30903.202 L 18022.761 31449.557 L 17363.571 31437.68 L 17381.387 30748.797 Z" class="clickable"/>
     <path d="M17650 31358 c-59 -13 -117 -53 -154 -106 -27 -38 -30 -49 -29 -121 0 -70 4 -84 29 -122 46 -69 102 -102 178 -107 104 -7 169 26 224 112 20 33 26 54 26 106 2 118 -65 210 -169 234 -16 4 -37 8 -45 10 -8 2 -35 -1 -60 -6z m159 -55 c64 -39 105 -118 97 -187 -7 -63 -44 -125 -96 -161 -36 -25 -52 -29 -109 -29 -78 0 -137 29 -177 87 -33 49 -31 57 15 57 60 0 71 -7 64 -41 -4 -22 -2 -29 11 -29 16 0 20 10 16 43 -1 11 7 21 19 24 27 7 27 19 0 33 -18 10 -20 19 -17 86 4 96 -10 97 -77 4 -47 -66 -82 -91 -72 -52 3 9 8 30 12 46 14 62 75 124 145 147 43 14 121 1 169 -28z m-203 -166 c-1 -29 -4 -32 -39 -35 -20 -2 -37 0 -37 3 0 4 14 25 31 47 35 43 47 39 45 -15z" style="stroke-width: 20px;" class="notclickable"/>
@@ -443,7 +446,7 @@
   <rect class="clickable" x="1174.375" y="2020.424" width="71.872" height="140.559" style=" stroke: rgb(0, 0, 0);  "/>
   <rect class="clickable" x="1248.066" y="2020.424" width="71.417" height="140.559" style=" stroke: rgb(0, 0, 0);  "/>
   <rect class="clickable" x="1321.303" y="2020.424" width="75.511" height="140.559" style=" stroke: rgb(0, 0, 0);  "/>
-  <rect class="clickable" x="1397.268" y="2020.878" width="76.875" height="140.104" style=" stroke: rgb(0, 0, 0);  "/>
+  <a xlink:href="http://example.com/link/"><rect class="clickable" x="1397.268" y="2020.878" width="76.875" height="140.104" style=" stroke: rgb(0, 0, 0);  "/></a>
   <rect class="clickable" x="1067.023" y="2162.802" width="78.24" height="82.334" style=" stroke: rgb(0, 0, 0);  "/>
   <rect class="clickable" x="1147.082" y="2163.712" width="97.8" height="80.514" style=" stroke: rgb(0, 0, 0);  "/>
   <rect class="clickable" x="1248.066" y="2164.167" width="71.872" height="80.514" style=" stroke: rgb(0, 0, 0);  "/>
@@ -451,7 +454,7 @@
   <rect class="clickable" x="1397.723" y="2160.983" width="75.966" height="83.699" style=" stroke: rgb(0, 0, 0);  "/>
   <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="1065.203 2244.226 1065.203 2161.438 986.054 2162.347 968.313 2238.768 981.505 2246.046"/>
   <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="985.144 2162.347 1095.681 2161.438 1096.135 2020.424 1017.896 2020.424"/>
-  <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="800.461 2020.424 943.295 2020.878 923.28 2100.483 789.089 2063.183"/>
+  <a xlink:href="http://example.com/link/"><polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="800.461 2020.424 943.295 2020.878 923.28 2100.483 789.089 2063.183"/></a>
   <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="789.089 2065.457 922.825 2103.667 900.991 2178.268 768.165 2141.877"/>
   <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="768.62 2144.152 902.355 2181.907 880.066 2257.873 750.424 2221.482"/>
   <polygon class="clickable" style=" stroke: rgb(0, 0, 0);  " points="749.969 2223.756 880.976 2260.602 860.051 2339.297 728.59 2302.451"/>
